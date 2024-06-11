@@ -1,47 +1,71 @@
-<x-guest-layout>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
+<?php $page = 'index'; ?>
+@extends('layout.mainlayout')
+@section('content')
+    <div class="account-content">
+        <a href="{{url('job-list')}}" class="btn btn-primary apply-btn">Apply Job</a>
+        <div class="container">
 
-    <form method="POST" action="{{ route('login') }}">
-        @csrf
+            <!-- Account Logo -->
+            <div class="account-logo">
+                <a href="{{url('admin-dashboard')}}"><img src="{{ URL::asset('assets/img/logo2.png')}}" alt="Dreamguy's Technologies"></a>
+            </div>
+            <!-- /Account Logo -->
 
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
+            <div class="account-box">
+                <div class="account-wrapper">
+                    <h3 class="account-title">Login</h3>
+                    <p class="account-subtitle">Access to our dashboard</p>
+
+                    <!-- Account Form -->
+                    <form action="{{url('custom-login')}}" method="POST">
+                        @csrf
+                        <div class="input-block mb-4">
+                            <label class="col-form-label">Email Address</label>
+                            <input class="form-control" type="text" value="admin@dreamguystech.com" name="email" id="email">
+                            <div class="text-danger pt-2">
+                                @error('0')
+                                {{ $message }}
+                                @enderror
+                                @error('email')
+                                {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="input-block mb-4">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <label class="col-form-label">Password</label>
+                                </div>
+                                <div class="col-auto">
+                                    <a class="text-muted" href="{{url('forgot-password')}}">
+                                        Forgot password?
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="position-relative">
+                                <input class="form-control" type="password" value="123456" id="password" name="password">
+                                <span class="fa-solid fa-eye-slash" id="toggle-password"></span>
+                            </div>
+                            <div class="text-danger pt-2">
+                                @error('0')
+                                {{ $message }}
+                                @enderror
+                                @error('password')
+                                {{ $message }}
+                                @enderror
+                            </div>
+                        </div>
+                        <div class="input-block mb-4 text-center">
+                            <button class="btn btn-primary account-btn" type="submit">Login</button>
+                        </div>
+                        <div class="account-footer">
+                            <p>Don't have an account yet? <a href="{{url('register')}}">Register</a></p>
+                        </div>
+                    </form>
+                    <!-- /Account Form -->
+
+                </div>
+            </div>
         </div>
-
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <!-- Remember Me -->
-        <div class="block mt-4">
-            <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
-                <span class="ms-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Remember me') }}</span>
-            </label>
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            @if (Route::has('password.request'))
-                <a class="underline text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 dark:focus:ring-offset-gray-800" href="{{ route('password.request') }}">
-                    {{ __('Forgot your password?') }}
-                </a>
-            @endif
-
-            <x-primary-button class="ms-3">
-                {{ __('Log in') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+    </div>
+@endsection
