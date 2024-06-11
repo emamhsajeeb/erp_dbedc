@@ -13,13 +13,13 @@ return new class extends Migration
     {
         Schema::create('site_instructions', function (Blueprint $table) {
             $table->id();
-            $table->string('si_no')->nullable();
-            $table->string('ref_no')->nullable();
-            $table->string('si_type')->nullable();
-            $table->date('issue_date')->nullable();
-            $table->string('chainages')->nullable();
-            $table->string('details')->nullable();
-            $table->string('status')->nullable();
+            $table->string('si_no');
+            $table->string('ref_no');
+            $table->string('si_type');
+            $table->date('issue_date');
+            $table->text('chainages');
+            $table->text('details');
+            $table->string('status');
             $table->string('remarks')->nullable();
             $table->timestamps();
         });

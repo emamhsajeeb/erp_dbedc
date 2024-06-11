@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('last_name')->nullable();
             $table->string('phone')->unique();
             $table->string('email')->unique();
+            $table->string('incharge')->nullable();
             $table->date('joining_date')->nullable();
             $table->date('dob')->nullable();
             $table->text('address')->nullable();
@@ -32,7 +33,7 @@ return new class extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->rememberToken();
             $table->timestamps();
-            $table->string('incharge')->nullable()->after('photo');
+
         });
     }
 

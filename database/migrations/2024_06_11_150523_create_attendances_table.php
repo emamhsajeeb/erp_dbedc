@@ -16,11 +16,12 @@ return new class extends Migration
             $table->integer('user_id');
             $table->date('date');
             $table->string('symbol');
-            $table->timestamps();
             $table->time('clockin')->nullable();
             $table->time('clockout')->nullable();
             $table->string('clockin_location')->nullable();
             $table->string('clockout_location')->nullable();
+            $table->timestamps();
+
         });
     }
 

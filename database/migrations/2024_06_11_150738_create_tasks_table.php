@@ -23,13 +23,14 @@ return new class extends Migration
             $table->string('qty_layer')->nullable();
             $table->string('planned_time')->nullable();
             $table->string('incharge');
+            $table->string('assigned')->nullable();
             $table->dateTime('completion_time')->nullable();
             $table->text('inspection_details')->nullable();
             $table->integer('resubmission_count')->nullable();
             $table->text('resubmission_date')->nullable();
             $table->date('rfi_submission_date')->nullable();
             $table->timestamps();
-            $table->string('assigned')->nullable()->after('incharge');
+
 
         });
     }

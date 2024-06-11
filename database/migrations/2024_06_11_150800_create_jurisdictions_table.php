@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('jurisdictions', function (Blueprint $table) {
             $table->id();
+            $table->string('location');
+            $table->string('start_chainage');
+            $table->string('end_chainage');
+            $table->string('incharge');
             $table->timestamps();
         });
     }
