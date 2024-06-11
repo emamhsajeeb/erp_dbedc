@@ -513,3 +513,5 @@ Route::get('/job-aptitude', function () {
 Route::get('/questions', function () {
     return view('questions');
 })->name('questions');
+
+require __DIR__.'/auth.php';
