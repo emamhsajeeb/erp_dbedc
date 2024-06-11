@@ -11,28 +11,28 @@
     <meta name="author" content="Dreamguys - Bootstrap Admin Template">
     <meta name="robots" content="noindex, nofollow">
     @if (Route::is(['activities']))
-        <title>Activities - HRMS admin template</title>
+        <title>Activities - DBEDC ERP</title>
     @endif
     @if (Route::is(['admin-dashboard']))
-        <title>Dashboard - HRMS admin template</title>
+        <title>Dashboard - DBEDC ERP</title>
     @endif
     @if (Route::is(['applied-jobs']))
-        <title>Applied Jobs - HRMS admin template</title>
+        <title>Applied Jobs - DBEDC ERP</title>
     @endif
     @if (Route::is(['approval-setting']))
-        <title>Approval Setting - HRMS admin template</title>
+        <title>Approval Setting - DBEDC ERP</title>
     @endif
     @if (Route::is(['apptitude-result']))
-        <title>Shortlist Candidates - HRMS admin template</title>
+        <title>Shortlist Candidates - DBEDC ERP</title>
     @endif
     @if (Route::is(['archived-jobs']))
-        <title>Archived Jobs - HRMS admin template</title>
+        <title>Archived Jobs - DBEDC ERP</title>
     @endif
     @if (Route::is(['assets-category', 'assets-details', 'assets-new', 'assets-reports', 'assets1']))
-        <title>Assets - HRMS admin template</title>
+        <title>Assets - DBEDC ERP</title>
     @endif
     @if (Route::is(['attance-reports']))
-        <title>Attendance Report - HRMS admin template</title>
+        <title>Attendance Report - DBEDC ERP</title>
     @endif
     @if (Route::is([
             'attend-reports',
@@ -43,358 +43,358 @@
             'task-reports',
             'user-reports',
         ]))
-        <title>Reports - HRMS admin template</title>
+        <title>Reports - DBEDC ERP</title>
     @endif
     @if (Route::is(['attendance-employee', 'attendance']))
-        <title>Attendance - HRMS admin template</title>
+        <title>Attendance - DBEDC ERP</title>
     @endif
     @if (Route::is(['blank-page']))
-        <title>Blank Page - HRMS admin template</title>
+        <title>Blank Page - DBEDC ERP</title>
     @endif
     @if (Route::is(['budget-expenses', 'budget-revenues', 'categories', 'sub-category']))
-        <title>Categories - HRMS admin template</title>
+        <title>Categories - DBEDC ERP</title>
     @endif
     @if (Route::is(['budgets']))
-        <title>Budgets - HRMS admin template</title>
+        <title>Budgets - DBEDC ERP</title>
     @endif
     @if (Route::is(['events']))
-        <title>Events - HRMS admin template</title>
+        <title>Events - DBEDC ERP</title>
     @endif
     @if (Route::is(['candidates']))
-        <title>Candidates - HRMS admin template</title>
+        <title>Candidates - DBEDC ERP</title>
     @endif
     @if (Route::is(['change-password']))
-        <title>Change Password - HRMS admin template</title>
+        <title>Change Password - DBEDC ERP</title>
     @endif
     @if (Route::is(['chat']))
-        <title>Chat - HRMS admin template</title>
+        <title>Chat - DBEDC ERP</title>
     @endif
     @if (Route::is(['client-profile']))
-        <title>Client Profile - HRMS admin template</title>
+        <title>Client Profile - DBEDC ERP</title>
     @endif
     @if (Route::is(['clients-list', 'clients']))
-        <title>Clients - HRMS admin template</title>
+        <title>Clients - DBEDC ERP</title>
     @endif
     @if (Route::is(['components']))
-        <title>Components - HRMS admin template</title>
+        <title>Components - DBEDC ERP</title>
     @endif
     @if (Route::is(['compose']))
-        <title>Compose - HRMS admin template</title>
+        <title>Compose - DBEDC ERP</title>
     @endif
     @if (Route::is(['contacts']))
-        <title>Contacts - HRMS admin template</title>
+        <title>Contacts - DBEDC ERP</title>
     @endif
     @if (Route::is(['create-estimate']))
-        <title>Create Estimate - HRMS admin template</title>
+        <title>Create Estimate - DBEDC ERP</title>
     @endif
     @if (Route::is(['create-invoice']))
-        <title>Create Invoice - HRMS admin template</title>
+        <title>Create Invoice - DBEDC ERP</title>
     @endif
     @if (Route::is(['cron-setting']))
-        <title>Cron Setting - HRMS admin template</title>
+        <title>Cron Setting - DBEDC ERP</title>
     @endif
     @if (Route::is(['daily-reports']))
-        <title>Daily Report - HRMS admin template</title>
+        <title>Daily Report - DBEDC ERP</title>
     @endif
     @if (Route::is(['data-tables']))
-        <title>Data Tables - HRMS admin template</title>
+        <title>Data Tables - DBEDC ERP</title>
     @endif
     @if (Route::is(['departments']))
-        <title>Departments - HRMS admin template</title>
+        <title>Departments - DBEDC ERP</title>
     @endif
     @if (Route::is(['designations']))
-        <title>Designations - HRMS admin template</title>
+        <title>Designations - DBEDC ERP</title>
     @endif
     @if (Route::is(['edit-estimate']))
-        <title>Edit Estimate - HRMS admin template</title>
+        <title>Edit Estimate - DBEDC ERP</title>
     @endif
     @if (Route::is(['edit-invoice']))
-        <title>Edit Invoice - HRMS admin template</title>
+        <title>Edit Invoice - DBEDC ERP</title>
     @endif
     @if (Route::is(['email-settings']))
-        <title>Email Settings - HRMS admin template</title>
+        <title>Email Settings - DBEDC ERP</title>
     @endif
     @if (Route::is(['employee-dashboard']))
-        <title>Employee Dashboard - HRMS admin template</title>
+        <title>Employee Dashboard - DBEDC ERP</title>
     @endif
     @if (Route::is(['employee-reports']))
-        <title>Employee Report - HRMS admin template</title>
+        <title>Employee Report - DBEDC ERP</title>
     @endif
     @if (Route::is(['employees-list', 'employees']))
-        <title>Employees - HRMS admin template</title>
+        <title>Employees - DBEDC ERP</title>
     @endif
     @if (Route::is(['error-404']))
-        <title>Error 404 - HRMS admin template</title>
+        <title>Error 404 - DBEDC ERP</title>
     @endif
     @if (Route::is(['error-500']))
-        <title>Error 500 - HRMS admin template</title>
+        <title>Error 500 - DBEDC ERP</title>
     @endif
     @if (Route::is(['estimate-view', 'estimates']))
-        <title>Estimates - HRMS admin template</title>
+        <title>Estimates - DBEDC ERP</title>
     @endif
     @if (Route::is(['events']))
-        <title>Events - HRMS admin template</title>
+        <title>Events - DBEDC ERP</title>
     @endif
     @if (Route::is(['expense-reports']))
-        <title>Expense Report - HRMS admin template</title>
+        <title>Expense Report - DBEDC ERP</title>
     @endif
     @if (Route::is(['expenses']))
-        <title>Expenses - HRMS admin template</title>
+        <title>Expenses - DBEDC ERP</title>
     @endif
     @if (Route::is(['experiance-level']))
-        <title>Experiance Level - HRMS admin template</title>
+        <title>Experiance Level - DBEDC ERP</title>
     @endif
     @if (Route::is(['faq']))
-        <title>FAQ - HRMS admin template</title>
+        <title>FAQ - DBEDC ERP</title>
     @endif
     @if (Route::is(['file-manager']))
-        <title>File Manager - HRMS admin template</title>
+        <title>File Manager - DBEDC ERP</title>
     @endif
     @if (Route::is(['forgot-password']))
-        <title>Forgot Password - HRMS admin template</title>
+        <title>Forgot Password - DBEDC ERP</title>
     @endif
     @if (Route::is(['form-basic-inputs']))
-        <title>Form Basic Input - HRMS admin template</title>
+        <title>Form Basic Input - DBEDC ERP</title>
     @endif
     @if (Route::is(['form-horizontal']))
-        <title>Horizontal Form - HRMS admin template</title>
+        <title>Horizontal Form - DBEDC ERP</title>
     @endif
     @if (Route::is(['form-input-groups']))
-        <title>Form Input Groups - HRMS admin template</title>
+        <title>Form Input Groups - DBEDC ERP</title>
     @endif
     @if (Route::is(['form-mask']))
-        <title>Form Mask - HRMS admin template</title>
+        <title>Form Mask - DBEDC ERP</title>
     @endif
     @if (Route::is(['form-validation']))
-        <title>Form Validation - HRMS admin template</title>
+        <title>Form Validation - DBEDC ERP</title>
     @endif
     @if (Route::is(['form-vertical']))
-        <title>Form Vertical - HRMS admin template</title>
+        <title>Form Vertical - DBEDC ERP</title>
     @endif
     @if (Route::is(['goal-tracking', 'goal-type']))
-        <title>Goal - HRMS admin template</title>
+        <title>Goal - DBEDC ERP</title>
     @endif
     @if (Route::is(['holidays']))
-        <title>Holidays - HRMS admin template</title>
+        <title>Holidays - DBEDC ERP</title>
     @endif
     @if (Route::is(['inbox']))
-        <title>Inbox - HRMS admin template</title>
+        <title>Inbox - DBEDC ERP</title>
     @endif
     @if (Route::is(['incoming-call']))
-        <title>Incoming Call - HRMS admin template</title>
+        <title>Incoming Call - DBEDC ERP</title>
     @endif
-    @if (Route::is(['index']))
-        <title>Login - HRMS admin template</title>
+    @if (Route::is(['login']))
+        <title>Login - DBEDC ERP</title>
     @endif
     @if (Route::is(['interview-questions']))
-        <title>Interview Questions - HRMS admin template</title>
+        <title>Interview Questions - DBEDC ERP</title>
     @endif
     @if (Route::is(['interviewing']))
-        <title>Interviewing Page - HRMS admin template</title>
+        <title>Interviewing Page - DBEDC ERP</title>
     @endif
     @if (Route::is(['invoice-reports']))
-        <title>Invoice Report - HRMS admin template</title>
+        <title>Invoice Report - DBEDC ERP</title>
     @endif
     @if (Route::is(['invoice-settings']))
-        <title>Invoice Settings - HRMS admin template</title>
+        <title>Invoice Settings - DBEDC ERP</title>
     @endif
     @if (Route::is(['invoice-view']))
-        <title>Invoice - HRMS admin template</title>
+        <title>Invoice - DBEDC ERP</title>
     @endif
     @if (Route::is(['invoices']))
-        <title>Invoices - HRMS admin template</title>
+        <title>Invoices - DBEDC ERP</title>
     @endif
     @if (Route::is(['job-applicants']))
-        <title>Job Applicants - HRMS admin template</title>
+        <title>Job Applicants - DBEDC ERP</title>
     @endif
     @if (Route::is(['jobs-aptitude']))
-        <title>Aptitude - HRMS admin template</title>
+        <title>Aptitude - DBEDC ERP</title>
     @endif
     @if (Route::is(['job-details', 'job-list', 'job-view', 'jobs']))
-        <title>Jobs - HRMS admin template</title>
+        <title>Jobs - DBEDC ERP</title>
     @endif
     @if (Route::is(['jobs-dashboard']))
-        <title>Job Dashboard - HRMS admin template</title>
+        <title>Job Dashboard - DBEDC ERP</title>
     @endif
     @if (Route::is(['knowledgebase', 'knowledgebase-view']))
-        <title>Knowledgebase - HRMS admin template</title>
+        <title>Knowledgebase - DBEDC ERP</title>
     @endif
     @if (Route::is(['leads']))
-        <title>Leads - HRMS admin template</title>
+        <title>Leads - DBEDC ERP</title>
     @endif
     @if (Route::is(['leave-reports']))
-        <title>Leave Report - HRMS admin template</title>
+        <title>Leave Report - DBEDC ERP</title>
     @endif
     @if (Route::is(['leave-settings']))
-        <title>Leave Settings - HRMS admin template</title>
+        <title>Leave Settings - DBEDC ERP</title>
     @endif
     @if (Route::is(['leave-type']))
-        <title>Leave Type - HRMS admin template</title>
+        <title>Leave Type - DBEDC ERP</title>
     @endif
     @if (Route::is(['leaves', 'leaves-employee']))
-        <title>Leaves - HRMS admin template</title>
+        <title>Leaves - DBEDC ERP</title>
     @endif
     @if (Route::is(['localization']))
-        <title>Localization - HRMS admin template</title>
+        <title>Localization - DBEDC ERP</title>
     @endif
     @if (Route::is(['lock-screen']))
-        <title>Lock Screen - HRMS admin template</title>
+        <title>Lock Screen - DBEDC ERP</title>
     @endif
     @if (Route::is(['mail-view']))
-        <title>Mail view - HRMS admin template</title>
+        <title>Mail view - DBEDC ERP</title>
     @endif
     @if (Route::is(['manage-resumes']))
-        <title>Manage Resumes - HRMS admin template</title>
+        <title>Manage Resumes - DBEDC ERP</title>
     @endif
     @if (Route::is(['notifications-settings']))
-        <title>Notifications Settings - HRMS admin template</title>
+        <title>Notifications Settings - DBEDC ERP</title>
     @endif
     @if (Route::is(['offer_approvals']))
-        <title>Offer Approvals - HRMS admin template</title>
+        <title>Offer Approvals - DBEDC ERP</title>
     @endif
     @if (Route::is(['offered-jobs']))
-        <title>Offered Jobs - HRMS admin template</title>
+        <title>Offered Jobs - DBEDC ERP</title>
     @endif
     @if (Route::is(['otp']))
-        <title>OTP - HRMS admin template</title>
+        <title>OTP - DBEDC ERP</title>
     @endif
     @if (Route::is(['outgoing-call']))
-        <title>Outgoing Call - HRMS admin template</title>
+        <title>Outgoing Call - DBEDC ERP</title>
     @endif
     @if (Route::is(['overtime']))
-        <title>Overtime - HRMS admin template</title>
+        <title>Overtime - DBEDC ERP</title>
     @endif
     @if (Route::is(['payments']))
-        <title>Payments - HRMS admin template</title>
+        <title>Payments - DBEDC ERP</title>
     @endif
     @if (Route::is(['payroll-items']))
-        <title>Payroll Items - HRMS admin template</title>
+        <title>Payroll Items - DBEDC ERP</title>
     @endif
     @if (Route::is(['performance-appraisal']))
-        <title>Performance Appraisal - HRMS admin template</title>
+        <title>Performance Appraisal - DBEDC ERP</title>
     @endif
     @if (Route::is(['performance-indicator']))
-        <title>Performance Indicator - HRMS admin template</title>
+        <title>Performance Indicator - DBEDC ERP</title>
     @endif
     @if (Route::is(['performance-setting']))
-        <title>Performance Setting - HRMS admin template</title>
+        <title>Performance Setting - DBEDC ERP</title>
     @endif
     @if (Route::is(['performance']))
-        <title>Performance Review - HRMS admin template</title>
+        <title>Performance Review - DBEDC ERP</title>
     @endif
     @if (Route::is(['policies']))
-        <title>Policies - HRMS admin template</title>
+        <title>Policies - DBEDC ERP</title>
     @endif
     @if (Route::is(['privacy-policy']))
-        <title>Privacy Policy - HRMS admin template</title>
+        <title>Privacy Policy - DBEDC ERP</title>
     @endif
     @if (Route::is(['user-asset-details', 'profile']))
-        <title>Employee Profile - HRMS admin template</title>
+        <title>Employee Profile - DBEDC ERP</title>
     @endif
     @if (Route::is(['projects', 'project-list']))
-        <title>Projects - HRMS admin template</title>
+        <title>Projects - DBEDC ERP</title>
     @endif
     @if (Route::is(['project-view']))
-        <title>Project View - HRMS admin template</title>
+        <title>Project View - DBEDC ERP</title>
     @endif
     @if (Route::is(['promotion']))
-        <title>Promotion - HRMS admin template</title>
+        <title>Promotion - DBEDC ERP</title>
     @endif
     @if (Route::is(['provident-fund']))
-        <title>Provident Fund - HRMS admin template</title>
+        <title>Provident Fund - DBEDC ERP</title>
     @endif
     @if (Route::is(['questions']))
-        <title>Aptitude - HRMS admin template</title>
+        <title>Aptitude - DBEDC ERP</title>
     @endif
     @if (Route::is(['register']))
-        <title>Register - HRMS admin template</title>
+        <title>Register - DBEDC ERP</title>
     @endif
     @if (Route::is(['resignation']))
-        <title>Resignation - HRMS admin template</title>
+        <title>Resignation - DBEDC ERP</title>
     @endif
     @if (Route::is(['roles-permissions']))
-        <title>Roles & Permission - HRMS admin template</title>
+        <title>Roles & Permission - DBEDC ERP</title>
     @endif
     @if (Route::is(['salary-settings']))
-        <title>Salary Settings - HRMS admin template</title>
+        <title>Salary Settings - DBEDC ERP</title>
     @endif
     @if (Route::is(['salary', 'salary-view']))
-        <title>Salary - HRMS admin template</title>
+        <title>Salary - DBEDC ERP</title>
     @endif
     @if (Route::is(['saved-jobs']))
-        <title>Saved Jobs - HRMS admin template</title>
+        <title>Saved Jobs - DBEDC ERP</title>
     @endif
     @if (Route::is(['schedule-timing']))
-        <title>Schedule timing - HRMS admin template</title>
+        <title>Schedule timing - DBEDC ERP</title>
     @endif
     @if (Route::is(['search']))
-        <title>Search Results - HRMS admin template</title>
+        <title>Search Results - DBEDC ERP</title>
     @endif
     @if (Route::is(['settings']))
-        <title>Settings - HRMS admin template</title>
+        <title>Settings - DBEDC ERP</title>
     @endif
     @if (Route::is(['shift-list']))
-        <title>Shift List - HRMS admin template</title>
+        <title>Shift List - DBEDC ERP</title>
     @endif
     @if (Route::is(['shift-scheduling']))
-        <title>Shift & Schedule - HRMS admin template</title>
+        <title>Shift & Schedule - DBEDC ERP</title>
     @endif
     @if (Route::is(['shortlist-candidates']))
-        <title>Shortlist Candidates - HRMS admin template</title>
+        <title>Shortlist Candidates - DBEDC ERP</title>
     @endif
     @if (Route::is(['subscribed-companies', 'subscriptions-company', 'subscriptions']))
-        <title>Subscriptions - HRMS admin template</title>
+        <title>Subscriptions - DBEDC ERP</title>
     @endif
     @if (Route::is(['tables-basic']))
-        <title>Basic Tables - HRMS admin template</title>
+        <title>Basic Tables - DBEDC ERP</title>
     @endif
     @if (Route::is(['task-board']))
-        <title>Task Board - HRMS admin template</title>
+        <title>Task Board - DBEDC ERP</title>
     @endif
     @if (Route::is(['tasks']))
-        <title>Tasks - HRMS admin template</title>
+        <title>Tasks - DBEDC ERP</title>
     @endif
     @if (Route::is(['taxes']))
-        <title>Taxes - HRMS admin template</title>
+        <title>Taxes - DBEDC ERP</title>
     @endif
     @if (Route::is(['termination']))
-        <title>Termination - HRMS admin template</title>
+        <title>Termination - DBEDC ERP</title>
     @endif
     @if (Route::is(['terms']))
-        <title>Terms - HRMS admin template</title>
+        <title>Terms - DBEDC ERP</title>
     @endif
     @if (Route::is(['theme-settings']))
-        <title>Theme Settings - HRMS admin template</title>
+        <title>Theme Settings - DBEDC ERP</title>
     @endif
     @if (Route::is(['tickets', 'ticket-view']))
-        <title>Tickets - HRMS admin template</title>
+        <title>Tickets - DBEDC ERP</title>
     @endif
     @if (Route::is(['toxbox-setting']))
-        <title>Toxbox Settings- HRMS admin template</title>
+        <title>Toxbox Settings- DBEDC ERP</title>
     @endif
     @if (Route::is(['trainers']))
-        <title>Trainers - HRMS admin template</title>
+        <title>Trainers - DBEDC ERP</title>
     @endif
     @if (Route::is(['training', 'training-type']))
-        <title>Training - HRMS admin template</title>
+        <title>Training - DBEDC ERP</title>
     @endif
     @if (Route::is(['user-all-jobs']))
-        <title>All Jobs - HRMS admin template</title>
+        <title>All Jobs - DBEDC ERP</title>
     @endif
     @if (Route::is(['user-dashboard']))
-        <title>User Dashboard - HRMS admin template</title>
+        <title>User Dashboard - DBEDC ERP</title>
     @endif
     @if (Route::is(['users']))
-        <title>Users - HRMS admin template</title>
+        <title>Users - DBEDC ERP</title>
     @endif
     @if (Route::is(['video-call']))
-        <title>Video Call - HRMS admin template</title>
+        <title>Video Call - DBEDC ERP</title>
     @endif
     @if (Route::is(['visited-jobs']))
-        <title>Visited Jobs - HRMS admin template</title>
+        <title>Visited Jobs - DBEDC ERP</title>
     @endif
     @if (Route::is(['voice-call']))
-        <title>Voice Call - HRMS admin template</title>
+        <title>Voice Call - DBEDC ERP</title>
     @endif
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('/assets/img/favicon.png') }}">
@@ -404,7 +404,7 @@
 
     <body>
 @endif
-@if (Route::is('index', 'register', 'forgot-password', 'otp', 'lock-screen'))
+@if (Route::is('login', 'register', 'forgot-password', 'otp', 'lock-screen'))
 
     <body class="account-page">
 @endif
@@ -417,7 +417,7 @@
             'lock-screen',
             'otp',
             'forgot-password',
-            'index',
+            'login',
             'register',
             'change-password',
         ]))
@@ -425,7 +425,7 @@
         @if (!Route::is(['error-404', 'job-list', 'job-view']))
             @include('layout.partials.nav')
         @endif
-        @if (!Route::is(['error-404', 'job-list', 'job-view', 'index', 'register', 'change-password']))
+        @if (!Route::is(['error-404', 'job-list', 'job-view', 'login', 'register', 'change-password']))
             @include('layout.partials.twocolumnsidebar')
         @endif
         @if (
@@ -513,7 +513,7 @@
             'lock-screen',
             'otp',
             'forgot-password',
-            'index',
+            'login',
             'register',
             'change-password',
         ]))
@@ -533,7 +533,7 @@
         'lock-screen',
         'otp',
         'forgot-password',
-        'index',
+        'login',
         'register',
         'change-password',
         'job-list',
