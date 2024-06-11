@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Task;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CustomAuthController;
 
@@ -15,21 +17,36 @@ use App\Http\Controllers\CustomAuthController;
 */
 
 
-Route::get('admin-dashboard', [CustomAuthController::class, 'admin-dashboard']); 
+Route::get('admin-dashboard', [CustomAuthController::class, 'admin-dashboard']);
 Route::get('index', [CustomAuthController::class, 'index'])->name('index');
-Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom'); 
+Route::post('custom-login', [CustomAuthController::class, 'customLogin'])->name('login.custom');
 Route::get('register', [CustomAuthController::class, 'register'])->name('register-user');
-Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom'); 
+Route::post('custom-registration', [CustomAuthController::class, 'customRegistration'])->name('register.custom');
 Route::get('signout', [CustomAuthController::class, 'signOut'])->name('signout');
 
 
 Route::get('/', function () {
-        return view('index');
-  })->name('index');
-    
-    Route::get('/index', function () {
-        return view('index');
-    })->name('index');
+    $user = Auth::user();
+    $tasks = $user->hasRole('se')
+        ? Task::where('incharge', $user->user_name)->get()
+        : ($user->hasRole('qci') || $user->hasRole('aqci')
+            ? Task::where('assigned', $user->user_name)->get()
+            : Task::all()
+        );
+    $total = $tasks->count();
+    $completed = $tasks->where('status', 'completed')->count();
+    $pending = $total - $completed;
+    $rfi_submissions = $tasks->whereNotNull('rfi_submission_date')->count();
+    $statistics = [
+        'total' => $total,
+        'completed' => $completed,
+        'pending' => $pending,
+        'rfi_submissions' => $rfi_submissions
+    ];
+    return view('layouts/dashboard',['title' => 'Dashboard', 'user' => $user,'statistics' => $statistics]);
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+
 Route::get('/admin-dashboard', function () {
     return view('admin-dashboard');
 })->name('admin-dashboard');
