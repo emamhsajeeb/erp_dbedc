@@ -1,0 +1,23 @@
+RewriteEngine on
+
+# Disable directory browsing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.(env|htaccess|gitignore|gitattributes)$">
+    order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-XSS-Protection "1; mode=block"
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+      Header set Pragma "no-cache"
+      Header set Expires 0
+</IfModule>
+
+# Redirect all requests to the public folder
+RewriteRule ^(.*)$ public/$1 [L]
